@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 40px 20px;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .delete-icon {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+  }
+}
+
+.list {
+  margin-bottom: auto;
+  overflow-y: auto;
+}

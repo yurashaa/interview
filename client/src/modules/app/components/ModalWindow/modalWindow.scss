@@ -1,0 +1,32 @@
+.modal {
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+  }
+
+  &__block {
+    width: 500px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 0 16px;
+
+      div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

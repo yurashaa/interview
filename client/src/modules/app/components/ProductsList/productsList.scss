@@ -1,0 +1,17 @@
+.list {
+  padding: 50px !important;
+}
+
+.sort-panel {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  & > * {
+    cursor: pointer;
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+.product {
+  display: flex;
+  padding-top: 50px;
+
+  .back-arrow {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+  }
+
+  &__description {
+    width: 50%;
+    position: relative;
+
+    .edit-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 50;
+      cursor: pointer;
+    }
+  }
+
+  &__comments {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+}

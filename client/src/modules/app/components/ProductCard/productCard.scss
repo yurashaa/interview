@@ -1,0 +1,25 @@
+.MuiGridListTileBar-subtitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.MuiGridListTileBar {
+
+  &-root {
+    .MuiSvgIcon-root {
+      fill: #fff !important;
+    }
+  }
+
+  &-actionIcon {
+    padding-right: 16px;
+  }
+}
+
+.MuiGridListTile-tile {
+  display: flex !important;
+}
+
+.product {
+  margin: 0 50px 50px 0;
+}
