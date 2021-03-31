@@ -4,7 +4,7 @@ import {serverURL} from '../constants';
 
 export const getProducts = async (dispatch) => {
     try {
-        const products = await axios.get(`${serverURL}/products`);
+        const products = await axios.get(`${serverURL}/products/`);
 
         dispatch({type: GET_PRODUCTS, payload: products.data});
     } catch (e) {
@@ -24,7 +24,7 @@ export const getProductById = async (dispatch, id) => {
 
 export const getComments = async (dispatch, id) => {
     try {
-        const comments = await axios.get(`${serverURL}/comments?productId=${id}`);
+        const comments = await axios.get(`${serverURL}/comments?productId=${id}/`);
 
         dispatch({type: GET_COMMENTS, payload: comments.data});
     } catch (e) {
